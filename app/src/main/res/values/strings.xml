@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Notebook</string>
+    <string name="new_task">New task</string>
+    <string name="due_date">Due Date:</string>
+    <string name="status">Status:</string>
+    <string name="status_scheduled">Scheduled</string>
+    <string name="status_done">Done</string>
+    <string name="status_dismissed">Dissmised</string>
+    <string name="due_to">due to</string>
+    <string name="days">days</string>
+    <string name="there_is_no_events_in_your_s_notebook_yet">There is no events in Your\'s notebook yet!</string>
+
+</resources>

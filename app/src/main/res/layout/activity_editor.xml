@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.editorActivity.EditorActivity"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:paddingRight="48dp"
+            android:background="@color/colorTransparent"
+            style="@style/TitleTextStyle"
+            />
+        <ImageButton
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/cancel"
+            android:layout_alignRight="@+id/et_title"
+            android:layout_centerInParent="true"
+            android:background="@color/colorTransparent"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/due_date"
+        style="@style/SubTitlesTextStyle"
+        />
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/EditorTextViewStyle"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/status"
+        style="@style/SubTitlesTextStyle"
+        />
+    <Spinner
+        android:id="@+id/spinner_status"
+        android:layout_height="48dp"
+        android:layout_width="match_parent"
+        android:spinnerMode="dropdown"
+        android:background="@color/colorTransparent"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reminder:"
+        android:textColor="@color/colorBlue"
+        style="@style/SubTitlesTextStyle"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/et_reminder_days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:background="@color/colorTransparent"
+            android:textColor="@color/colorBlue"
+            style="@style/EditorTextViewStyle"
+            />
+        <TextView
+            android:id="@+id/days_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlue"
+            android:text="@string/days"
+            style="@style/EditorTextViewStyle"
+            />
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
